@@ -73,7 +73,7 @@ const FormOrder = () => {
       setError("");
       setDataResponse(data.data);
       setOrderId([data.data.id]);
-      navigate(`/order/${data.data.id}`);
+      navigate(`/pizzas-app/order/${data.data.id}`);
     } catch (e) {
       console.log(e.message);
       setError(

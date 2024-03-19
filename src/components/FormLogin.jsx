@@ -24,7 +24,7 @@ function FormLogin() {
   });
 
   const handleFormSubmit = () => {
-    navigate("/menu");
+    navigate("/pizzas-app/menu");
   };
 
   return (

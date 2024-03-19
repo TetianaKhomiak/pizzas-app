@@ -9,7 +9,7 @@ const OrderNotFound = () => {
     <div>
       <Header className="menu__header" />
       <div className="order-unfound__wrapper">
-        <Link className="order-unfound__link" to="/menu">
+        <Link className="order-unfound__link" to="/pizzas-app/menu">
           ← Back to menu
         </Link>
         <p className="order-unfound__title">Order not found</p>

@@ -39,7 +39,7 @@ const Cart = () => {
   };
 
   const handleOrder = () => {
-    navigate("/order/new");
+    navigate("/pizzas-app/order/new");
   };
 
   const formattedUserName =
@@ -51,7 +51,7 @@ const Cart = () => {
         <Header className="cart__header" />
       </div>
       <div className="cart">
-        <Link className="cart__link" to="/menu">
+        <Link className="cart__link" to="/pizzas-app/menu">
           ← Back to menu
         </Link>
         {state.items.length === 0 ? (

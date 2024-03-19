@@ -17,9 +17,9 @@ function Header({ className }) {
     const timeoutId = setTimeout(() => {
       if (value.trim() !== "") {
         if (orderId.includes(value.trim())) {
-          navigate(`/order/${value.trim()}`);
+          navigate(`/pizzas-app/order/${value.trim()}`);
         } else {
-          navigate("/order/not-found");
+          navigate("/pizzas-app/order/not-found");
         }
       }
     }, 1500);
@@ -28,7 +28,7 @@ function Header({ className }) {
 
   return (
     <header className={className}>
-      <a className="logo" href="/menu">
+      <a className="logo" href="/pizzas-app/menu">
         Pizza Day
       </a>
 

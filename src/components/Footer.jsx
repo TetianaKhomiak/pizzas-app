@@ -17,7 +17,7 @@ const Footer = () => {
         {state.totalItems === 1 ? <p>PIZZA</p> : <p>PIZZAS</p>}
         {isChecked ? <p>€{sum}</p> : <p>€{state.totalPrice.toFixed(2)}</p>}
       </div>
-      <Link className="footer__link" to="/cart">
+      <Link className="footer__link" to="/pizzas-app/cart">
         OPEN CART →
       </Link>
     </div>

@@ -11,7 +11,7 @@ const PageNotFound = () => {
         <h1 className="page__unfound_title">Page not found</h1>
         <p className="page__unfound_text">
           Please, visit
-          <Link className="page__unfound_link" to="/">
+          <Link className="page__unfound_link" to="/pizzas-app/">
             <span> Login&nbsp;</span>
           </Link>
           page
