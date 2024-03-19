@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.pizza__wrapper {
+    margin: 0 0 60px;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+}
+
+.pizza__wrapper_items {
+    width: 752px;
+    margin: auto;
+}
+
+.pizza {
+    display: flex;
+    gap: 16px;
+    padding: 8px 0;
+    justify-content: center;
+    border-bottom: solid 1px #E7E5E4;
+}
+
+.pizza__image {
+    width: 100px;
+    height: 100px;
+}
+
+.pizza__image_soldout {
+    filter: saturate(0);
+    width: 100px;
+    height: 100px;
+
+}
+
+.pizza__info {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+}
+
+.pizza__name {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pizza__ingredients {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pizza__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pizza__price {
+    font-size: 14px;
+}
+
+.pizza__btn_block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pizza__counter_counter {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pizza__btn_counter {
+    padding: 7px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 38px;
+}
+
+.pizza__btn_delete,
+.pizza__btn_add {
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90px;
+    padding: 10px 20px;
+}
+
+.pizza__btn_add {
+    width: 136px;
+    text-transform: uppercase;
+}
+
+.pizza__btn_add:hover,
+.pizza__btn_delete:hover,
+.pizza__btn_counter:hover {
+    background-color: #FACC15;
+}
+
+.pizza__btn_add:active,
+.pizza__btn_delete:active,
+.pizza__btn_counter:active {
+    border: white solid 2px;
+    background-color: rgb(245, 203, 77);
+    outline: 3px solid rgb(245, 203, 77);
+}
+
+.menu__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234, 179, 8);
+    padding: 12px 24px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    z-index: 2;
+}
+
+.loader-wrapper {
+    width: 120px;
+    margin: 100px auto;
+}
+
+
+
+@media (max-width:800px) {
+    .pizza__wrapper_items {
+        width: 85%;
+    }
+}
+
+@media (max-width:580px) {
+    .pizza__actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width:500px) {
+
+
+    .pizza__btn_block {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}

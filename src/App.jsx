@@ -1,14 +1,14 @@
-import "./App.css";
+import "./index.css";
 import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <nav>
+      {/* <nav>
         <Link to="/pizzas-app/">Login</Link>
         <Link to="/pizzas-app/menu">Menu</Link>
         <Link to="/pizzas-app/cart">Cart</Link>
-      </nav>
+      </nav> */}
       <Outlet />
     </>
   );

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    position: relative;
+}
+
+.login__text {
+    color: rgb(234 179 8);
+}
+
+.login__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234, 179, 8);
+    padding: 12px 24px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    z-index: 2;
+}
+
+.login__header .cart__user {
+    display: none;
+}
+
+.login__wrapper {
+    text-align: center;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__title {
+    line-height: 1.2;
+    margin: 0 40px 32px;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    font-weight: 600;
+}
+
+.login__text_small {
+    margin: 0 40px 30px;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+}
+
+.login-form {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 12px 24px;
+    width: 288px;
+    border-radius: 4px;
+    border: 1px solid rgb(231 229 228);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+}
+
+input:focus {
+    outline: 1px solid rgb(234, 179, 8);
+}
+
+.login-form__error {
+    width: 200px;
+    margin: 30px auto;
+    color: #d6a308;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+
+@media (max-width:500px) {
+    .login__title {
+        font-size: 28px;
+    }
+}

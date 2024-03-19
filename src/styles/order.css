@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.order__wrapper {
+    display: flex;
+    justify-content: space-between !important;
+    min-height: 50px !important;
+    background-color: rgb(234, 179, 8);
+    align-items: start !important;
+    padding: 12px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.order__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+}
+
+.order__form_wrapper {
+    width: 51%;
+    margin: 140px auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+}
+
+.order__form {
+    margin-top: 30px;
+}
+
+.order__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #44403C;
+}
+
+.order__input_wrapper {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.order__input {
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    width: 70%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.order__label_checkbox {
+    font-weight: 500;
+    margin: 0 10px;
+    font-size: 16px;
+    vertical-align: 5px;
+}
+
+#priority {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type='checkbox'] {
+    accent-color: #EAB308;
+}
+
+input[type='checkbox']:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px white, 0 0 0 6px #CA8A04;
+}
+
+.order__checkbox {
+    margin: 20px 0 20px 160px;
+}
+
+.order__label {
+    width: 160px;
+    display: block;
+}
+
+.order__btn {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 223px;
+    background-color: #EAB308;
+}
+
+.order__btn:hover {
+    background-color: #FACC15;
+}
+
+.order__btn:active {
+    border: white solid 2px;
+    background-color: rgb(245, 203, 77);
+    outline: 3px solid rgb(245, 203, 77);
+}
+
+.order__error {
+    margin-left: 160px;
+    font-weight: 600;
+    color: #d6a308;
+}
+
+.order__error_bold {
+    margin-top: 50px;
+    width: 650px;
+    color: #d6a308;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+
+@media (max-width:1055px) {
+    .order__form_wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width:632px) {
+
+    .order__form {
+        width: 85%;
+        margin: auto;
+    }
+
+    .order__input_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .order__error {
+        margin-left: 0;
+    }
+
+    .order__checkbox {
+        margin: 20px 0 20px 0;
+    }
+}

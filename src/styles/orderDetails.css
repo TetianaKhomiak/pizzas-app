@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.order__wrapper {
+    display: flex;
+    justify-content: space-between !important;
+    min-height: 50px !important;
+    background-color: rgb(234, 179, 8);
+    align-items: start !important;
+    padding: 12px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.order__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+}
+
+.order-details__wrapper {
+    width: 52%;
+    margin: 100px auto;
+}
+
+.order-details__header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    margin-bottom: 32px;
+}
+
+.order-details__title {
+    font-size: 20px;
+    color: #44403C;
+    font-weight: 600;
+}
+
+.order-details__title_green {
+    font-size: 14px;
+    background-color: #22C55E;
+    color: #F0FDF4;
+    padding: 4px 12px;
+    border-radius: 7px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.order-details__title_red {
+    background-color: #EF4444;
+    color: #F0FDF4;
+    padding: 4px 12px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    align-self: center;
+}
+
+.order-details__time {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    background-color: #E7E5E4;
+    border-radius: 7px;
+    padding: 4px 8px;
+    margin-bottom: 30px;
+}
+
+.order-details__line {
+    height: 1px;
+    border: none;
+    background-color: #E7E5E4;
+    margin: 0;
+}
+
+.order-details__time_small {
+    font-size: 12px;
+    color: rgb(120 113 108);
+    opacity: 1;
+}
+
+.order-details__time_big {
+    font-weight: 600;
+}
+
+.order-details__time_margin {
+    margin-left: 5px;
+}
+
+.order-details__item {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+    color: #44403C;
+    padding: 12px 0;
+    border-bottom: solid 1px #E7E5E4;
+}
+
+.order-details__item_bold {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.order-details__priority {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.order-details__price {
+    font-family: "Roboto Mono", monospace;
+    color: #57534E;
+    background-color: #E7E5E4;
+    border-radius: 7px;
+    padding: 20px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 7px;
+    margin: 32px 0;
+}
+
+.order-details__price_text {
+    margin: 10px 0 0;
+    font-weight: 700;
+}
+
+.order-details__price_regular {
+    margin: 10px 0 0;
+}
+
+.order-details__btn {
+    float: right;
+    padding: 10px 20px;
+    width: 127px;
+}
+
+.order-details__error {
+    width: 650px;
+    margin: 150px auto 0;
+    color: #d6a308;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+
+@media (max-width: 1022px) {
+    .order-details__wrapper {
+        width: 75%;
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 525px) {
+    .order-details__wrapper {
+        width: 85%;
+        margin: 100px auto;
+    }
+
+    .order-details__time {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .order-details__priority {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.footer__wrapper {
+    background-color: #292524;
+    color: #D6D3D1;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+}
+
+.footer__el {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #D6D3D1;
+}
