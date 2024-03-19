@@ -4,5 +4,5 @@
 > [https://tetianakhomiak.github.io/porten/](https://tetianakhomiak.github.io/pizzas-app/)
 
  ## Features 📋                                                                                                                                                          
- ⚡️ React Vite                                                                                                                                                     
+ ⚡️ React + Vite                                                                                                                                                     
  ⚡️ Responsive                                                                                                                                                                                                                                                                                                         
